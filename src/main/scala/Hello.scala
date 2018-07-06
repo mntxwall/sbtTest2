@@ -20,7 +20,7 @@ object Hello{
 
     case class Products(product_no: Int, name: String, price: Option[Int] ){
 
-      override def toString: String = s"${product_no}:${name}:${price.getOrElse("EmptyValue")}"
+      override def toString: String = s"$product_no:$name:${price.getOrElse("EmptyValue")}"
     }
 
     DB readOnly { implicit session =>
@@ -39,8 +39,8 @@ object Hello{
     }
 
 
-    println(headvertex)
-    println(tailvertex)
+    println((headvertex ::: tailvertex).toSet.toList)
+    //println(tailvertex)
 
 
   }
