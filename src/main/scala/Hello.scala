@@ -9,7 +9,7 @@ object Hello{
 
     Class.forName("org.postgresql.Driver")
 
-    ConnectionPool.singleton("jdbc:postgresql://127.0.0.1:5432/fzjz", "cw", "fzjz6dd")
+    ConnectionPool.singleton("jdbc:postgresql://127.0.0.1:5432/fzjz", "cw", "xxxx")
 
    // implicit val session = AutoSession
 
